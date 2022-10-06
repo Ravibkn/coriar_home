@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:courierv9/pages/routs.dart';
 import 'package:courierv9/pages/style_constent.dart';
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
@@ -102,7 +103,11 @@ class _ProfileState extends State<Profile> {
             padding: EdgeInsets.only(bottom: 260, left: 100),
             child: CircleAvatar(
               backgroundColor: Colors.cyan.shade300.withOpacity(.70),
-              child: IconButton(onPressed: () {}, icon: Icon(Icons.edit)),
+              child: IconButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, MyRouts.profilePageEditRout);
+                  },
+                  icon: Icon(Icons.edit)),
             ),
           ),
           Padding(

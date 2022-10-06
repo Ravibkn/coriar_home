@@ -50,7 +50,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.light,
       debugShowCheckedModeBanner: false,
       title: "Login_Signup UI",
-      initialRoute: MyRouts.profilePageEditRout,
+      initialRoute: MyRouts.splashScreenrout,
       routes: {
         MyRouts.loginRout: (context) => LoginSignUpPage(),
         MyRouts.bottomBarRout: (context) => NavBar(),
